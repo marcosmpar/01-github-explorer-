@@ -24,7 +24,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "public", "index.html"),
     }),
-    isDevelopment && new ReactRefreshWebpackPlugin(),
+    isDevelopment && new ReactRefreshWebpackPlugin({
+      overlay: false,
+    }),
   ].filter(Boolean),
   module: {
     rules: [
