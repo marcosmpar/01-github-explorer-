@@ -20,6 +20,7 @@ export function RepositoryList() {
           <RepositoryItem key={repository.name} repository={repository} />
         ))}
       </ul>
+      /
     </section>
   );
 }
